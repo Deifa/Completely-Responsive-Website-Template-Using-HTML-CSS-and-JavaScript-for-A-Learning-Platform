@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Complete Website Design</title>
+</head>
+<body>
+
+    <!---Home Page--->
+
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="homepage-text">
+                <h1>The purpose is to teach, bringing learn to people</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus hic, 
+                    optio amet praesentium id excepturi ratione ab esse rerum eos dicta laboriosam 
+                    at vel porro magni ea saepe enim natus.</p>
+                <button class="common-btn"><a href="#"></a>Read More</button>
+                <div class="lines">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/menu.png" id="menuBtn">
+
+    <!--- About Us Page -->
+
+    <section class="about-page">
+        <div class="left-column">
+            <img src="images/about.png">
+        </div>
+        <div class="right-column">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                    quasi voluptatum voluptates vitae porro quidem nulla, hic cupiditate
+                    quam repellendus laboriosam minus iure ex. Eaque quidem recusandae 
+                    eveniet unde eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quis atque exercitationem accusantium ipsam iure possimus? Quam velit facere
+                     a consequatur dolore! Repellat accusamus fuga laborum rerum incidunt voluptates id amet.</p>
+                 <div class="lines">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>"Learning is not attained by chance, it must be sort for with ardor and attended to with diligence"</h2>
+                <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!---Feature Page--->
+
+    <section class="features-page">
+        <div class="features-row">
+            <div class="feature-column">
+                <img src="images/pic-1.png">
+                <h4>Learn Anywhere</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Possimus voluptatibus.</p>
+            </div>
+            <div class="feature-column">
+                <img src="images/pic-2.png">
+                <h4>Expert Teachers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Possimus voluptatibus.</p>
+            </div>
+            <div class="feature-column">
+                <img src="images/pic-3.png">
+                <h4>Unlimited Access</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Possimus voluptatibus.</p>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <div class="lines">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+    </section>
+
+    <script>
+        let sideBar = document.getElementById("sidebar");
+        let menuBtn = document.getElementById("menuBtn");
+
+        menuBtn.onclick = function(){
+            if(sideBar.style.right === "-250px"){
+                sideBar.style.right = "0";
+            } else{
+                sideBar.style.right = "-250px"
+            }
+        }
+    </script>
+</body>
+</html>
